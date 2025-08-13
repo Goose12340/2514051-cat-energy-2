@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html"><img src="#" width="33" height="38" alt="Логотип Cat Energy"></a>
+    <a class="main-header__logo-name" href="index.html"><img src="#" width="101" height="18" alt="Cat Energy"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+
+    <section class="basic-data">
+      <h1 class="basic-data__title">Подбор программы</h1>
+      <p class="basic-data__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+
+      <form class="basic-data__form cat-data" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="cat-data__group">
+          <legend class="cat-data__description">Заполните анкету, и мы подберем
+            программу питания для вашего кота</legend>
+          <ul class="cat-data__list">
+            <li class="cat-data__item">
+              <label for="name">Имя:*</label>
+              <input class="cat-data__name-input" type="text" id="name" name="name-cat" placeholder="Барсик" required>
+            </li>
+
+            <li class="cat-data__item">
+              <label for="weight">Вес (кг):*</label>
+              <input class="cat-data__weight-input" type="number" id="weight" name="weight-cat" placeholder="7" required>
+            </li>
+
+            <li class="cat-data__item">
+              <label for="age">Возраст (лет):</label>
+              <input class="cat-data__age-input" type="number" id="age" name="age-cat" placeholder="7">
+            </li>
+          </ul>
+
+          <ul class="cat-data__list purpose-control">
+            <li class="purpose-control__item">
+              <input class="purpose-control__name-input" type="radio" id="weight-loss" name="purpose-check" required>
+              <label for="weight-loss">Похудение</label>
+            </li>
+
+            <li class="purpose-control__item">
+              <input class="purpose-control__weight-input" type="radio" id="weight-gain" name="purpose-check" required>
+              <label for="weight-gain">Набор массы</label>
+            </li>
+
+            <li class="purpose-control__item">
+              <input class="purpose-control__age-input" type="radio" id="advice" name="purpose-check" required>
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="contacts-group owner-contacts">
+          <legend class="owner-contacts__title">Контактные данные
+            (владельца кота)</legend>
+          <ul class="owner-contacts__list">
+            <li class="owner-contacts__item">
+              <label for="owner-email">E-mail:*</label>
+              <input class="owner-email__input" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" autocomplete="email" required>
+            </li>
+
+            <li class="owner-contacts__item">
+              <label for="owner-tel">Телефон:*</label>
+              <input class="owner-tel__input" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" autocomplete="tel" required>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="comments-group owner-comments">
+          <legend class="owner-comments__title">Комментарий</legend>
+          <textarea name="comments" rows="5" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="additional-group additional-ingredients">
+          <legend class="additional-ingredients__title">Дополнительно</legend>
+          <ul class="additional-ingredients__list">
+            <li class="additional-ingredients__item">
+              <input class="additional-ingredients__control" type="checkbox" id="sweetener" name="sweetener" checked>
+              <label for="sweetener">Cахарозаменитель</label>
+            </li>
+
+            <li class="additional-ingredients__item">
+              <input class="additional-ingredients__control" type="checkbox" id="water" name="water">
+              <label for="water">Питьевая вода</label>
+            </li>
+
+            <li class="additional-ingredients__item">
+              <input class="additional-ingredients__control" type="checkbox" id="milk" name="milk">
+              <label for="milk">Молоко</label>
+            </li>
+
+            <li class="additional-ingredients__item">
+              <input class="additional-ingredients__control" type="checkbox" id="vitamins" name="vitamins">
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="basic-data__send-button button" type="submit">Отправить заявку</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="main-footer-container">
+    <section class="footer-address">
+      <h2 class="footer-address__title">приглашаем к сотрудничеству дилеров!</h2>
+
+      <address class="footer-address__address">
+        <a class="address__link" href="#">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
+        <img class="address__map" src="#" width="320" height="362" alt="Геолакация организации Cat Energy">
+      </address>
+    </section>
+
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <a class="footer-contacts__logo-name" href="#"><img src="index.html" width="128" height="24" alt="Cat Energy"></a>
+      <ul class="footer-contacts__social-list">
+        <li class="footer-contacts__social-item">
+          <a class="footer-contacts__vk" href="#"><img src="#" width="28" height="22" alt="VK"></a>
+        </li>
+        <li class="footer-contacts__social-item">
+          <a class="footer-contacts__you-tube" href="#"><img src="#" width="28" height="22" alt="You-Tube"></a>
+        </li>
+        <li class="footer-contacts__social-item">
+          <a class="footer-contacts__telegram" href="#"><img src="#" width="28" height="22" alt="Telegram"></a>
+        </li>
+      </ul>
+      <a class="footer-contacts__html-academy" href="#"><img src="#" width="280" height="34" alt="HTML-Academy"></a>
+    </section>
+  </footer>
+
+</body>
+
+</html>
