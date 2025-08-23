@@ -11,8 +11,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html"><img src="#" width="33" height="38" alt="Логотип Cat Energy"></a>
-    <a class="main-header__logo-name" href="index.html"><img src="#" width="101" height="18" alt="Cat Energy"></a>
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/all_logos/desktop-logo.svg">
+        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/all_logos/tablet-logo.svg">
+        <img src="images/all_logos/mobile-logo.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+    </a>
+    <a class="main-header__logo-name" href="index.html">
+      <picture>
+        <source width="0" height="0" type="image/svg+xml" media="(min-width: 1440px)" srcset="none">
+        <source width="0" height="0" type="image/svg+xml" media="(min-width: 768px)" srcset="none">
+        <img src="images/all_logos/mobile-text-logo.svg" width="101" height="18" alt="Cat Energy">
+      </picture>
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -144,19 +156,36 @@
 
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <a class="footer-contacts__logo-name" href="#"><img src="index.html" width="128" height="24" alt="Cat Energy"></a>
+      <a class="footer-contacts__logo-name" href="#">
+        <img src="images/all_logos/mobile-text-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
       <ul class="footer-contacts__social-list">
         <li class="footer-contacts__social-item">
-          <a class="footer-contacts__vk" href="#"><img src="#" width="28" height="22" alt="VK"></a>
+          <a class="footer-contacts__vk" href="#">
+            <img src="images/social_icons/VK-icon.svg" width="28" height="22" alt="VK">
+          </a>
         </li>
         <li class="footer-contacts__social-item">
-          <a class="footer-contacts__you-tube" href="#"><img src="#" width="28" height="22" alt="You-Tube"></a>
+          <a class="footer-contacts__you-tube" href="#">
+            <img src="images/social_icons/You-Tube-icon.svg" width="28" height="22" alt="You-Tube">
+          </a>
         </li>
         <li class="footer-contacts__social-item">
-          <a class="footer-contacts__telegram" href="#"><img src="#" width="28" height="22" alt="Telegram"></a>
+          <a class="footer-contacts__telegram" href="#">
+            <img src="images/social_icons/Telegram-icon.svg" width="28" height="22" alt="Telegram">
+          </a>
         </li>
       </ul>
-      <a class="footer-contacts__html-academy" href="#"><img src="#" width="280" height="34" alt="HTML-Academy"></a>
+      <a class="footer-contacts__html-academy" href="#">
+        <picture>
+          <source width="168" height="37" type="image/svg+xml" media="(min-width: 768px)" srcset="images/social_icons/HTML-Academy-full-logo.svg">
+          <img class="html-academy__logo-text" src="images/social_icons/HTML-Academy-text.svg" width="113" height="20" alt="HTML-Academy">
+        </picture>
+        <picture>
+          <source width="168" height="37" type="image/svg+xml" media="(min-width: 768px)" srcset="images/social_icons/HTML-Academy-full-logo.svg">
+          <img class="html-academy__logo" src="images/social_icons/HTML-Academy-logo.svg" width="27" height="34" alt="HTML-Academy">
+        </picture>
+      </a>
     </section>
   </footer>
 
