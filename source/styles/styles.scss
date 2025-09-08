@@ -1,11 +1,21 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
 
 /* BLOCKS */
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/main-review.scss";
+@import "./blocks/outcome-table.scss";
+@import "./blocks/main-slider.scss";
 @import "./blocks/main-footer-container.scss";
+@import "./blocks/footer-address.scss";
+@import "./blocks/address.scss";
+@import "./blocks/footer-contacts.scss";
 
