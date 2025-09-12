@@ -10,7 +10,6 @@
 
 @mixin button() {
   .button {
-    display: block;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -21,5 +20,8 @@
     width: 280px;
     height: 40px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
