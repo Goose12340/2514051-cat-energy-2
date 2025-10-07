@@ -1,0 +1,17 @@
+$link-color: rgba(0, 0, 0, 1);
+
+
+.site-list {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $link-color;
+}
