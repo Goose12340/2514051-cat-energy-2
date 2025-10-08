@@ -1,1 +1,22 @@
+.main-nav__toggle {
+  display: none;
+}
+
+
+.main-nav__wrapper {
+  background-image: url("../../icons/stack.svg#menu_lines");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  pointer-events: inherit;
+
+  &::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#menu_cross");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    pointer-events: visible;
+  }
+}
 
