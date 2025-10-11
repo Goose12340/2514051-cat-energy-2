@@ -1,7 +1,8 @@
 .promo-preview__excerpt-title {
-  font-family: var(--font-oswald);
+  font-family: var(--font-minor);
   font-size: 24px;
   line-height: 37px;
+  min-height: 57px;
   text-transform: uppercase;
 
 
@@ -12,17 +13,18 @@
     background-position: 50% 50%;
   }
 
+  /* отдельный класс!!!!!!!
   &:nth-child(2) {
     background-image: url("../../icons/stack.svg#cat_strong");
     background-size: 50px 53px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
+  } */
 }
 
 
 .promo-preview__more {
-  font-family: var(--font-oswald);
+  font-family: var(--font-minor);
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
