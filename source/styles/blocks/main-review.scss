@@ -6,7 +6,7 @@
 }
 
 .main-review__description {
-  color: rgba(68, 68, 68, 1);
+  color: var(--main-grey);
 }
 
 .main-review__conclusion {
@@ -14,5 +14,5 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }

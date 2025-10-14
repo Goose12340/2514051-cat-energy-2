@@ -1,3 +1,5 @@
+$title-color: rgba(34, 34, 34, 1);
+
 .product-card__link {
   text-decoration: none;
 }
@@ -7,6 +9,6 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #222222;
+  color: $title-color;
   text-transform: uppercase;
 }
