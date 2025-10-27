@@ -1,19 +1,27 @@
+.card-view-all {
+  background-image: url("../../icons/stack.svg#plus");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  text-align: center;
+}
+
 .card-view-all__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: rgba(17, 17, 17, 1);
 }
 
 .card-view-all__description {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: var(--main-grey);
 }
 
 .card-view-all__view-all-button {
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: rgba(242, 242, 242, 1);
+  color: var(--main-grey);
 }
