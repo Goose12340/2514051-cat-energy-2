@@ -16,7 +16,20 @@ body {
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  padding: 13px 20px 40px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    padding: 25px 30px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    padding: 55px 110px 66px;
+  }
 }
 
 .visually-hidden {

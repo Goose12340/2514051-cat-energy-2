@@ -1,0 +1,106 @@
+.promo-preview {
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
+  background-image: url("../../icons/stack.svg#cat_slim");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+
+  &:nth-of-type(even) {
+    background-image: url("../../icons/stack.svg#cat_strong");
+    background-size: 67px 50px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+  }
+}
+
+
+.promo-preview__excerpt-title {
+  font-family: var(--font-minor);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 20px;
+
+  &.promo-preview__excerpt-title:nth-of-type(2) {
+    padding-left: 11px;
+  }
+}
+
+.promo-preview__excerpt-description {
+  color: var(--main-grey);
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+.promo-preview__more {
+  font-family: var(--font-minor);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 139px;
+  background-image: url("../../icons/stack.svg#arrow");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+  background-position: 90% 90%;
+  padding-top: 15px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo-preview {
+    min-width: 708px;
+    padding: 77px 53px 53px;
+    background-size: 200px 211px;
+    background-repeat: no-repeat;
+    background-position: 90% 60%;
+
+    &:nth-of-type(even) {
+      background-size: 268px 200px;
+      background-repeat: no-repeat;
+      background-position: 95% 60%;
+    }
+  }
+
+  .promo-preview__excerpt-title,
+  .promo-preview__excerpt-description {
+    text-align: start;
+  }
+
+  .promo-preview__excerpt-title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .promo-preview__excerpt-description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    border-bottom: none;
+  }
+
+  .promo-preview__more {
+    font-size: 20px;
+    line-height: 20px;
+    width: 165px;
+    background-position: 90% 80%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-preview {
+    min-width: 570px;
+  }
+}

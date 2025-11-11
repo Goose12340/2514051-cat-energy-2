@@ -24,16 +24,12 @@
       </picture>
     </a>
     <a class="main-header__logo-name" href="#">
-      <picture>
-        <source width="0" height="0" type="image/svg+xml" media="(min-width: 1440px)" srcset="none">
-        <source width="0" height="0" type="image/svg+xml" media="(min-width: 768px)" srcset="none">
-        <img src="images/all-logos/mobile-text-logo.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
+      <img src="images/all-logos/mobile-text-logo.svg" width="101" height="18" alt="Cat Energy">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-header__toggle toggle" type="button">
+      <span>Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--close">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item site-list__item--active">
@@ -58,23 +54,23 @@
         <p class="promo__description">Занялся собой? Займись котом!</p>
         <picture>
           <source width="720" height="694" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop-index/promo-photo-cat-desktop@1x.jpg 1x, images/desktop-index/promo-photo-cat-desktop@2x.jpg 2x">
-          <img class="promo__photo-cat" src="images/mobile-index/promo-photo-cat@1x.jpg" srcset="images/mobile-index/promo-photo-cat@2x.jpg 2x" width="320" height="302" alt="Фотография радостного кота">
+          <img class="promo__photo-cat promo__photo-cat--close" src="images/mobile-index/promo-photo-cat@1x.jpg" srcset="images/mobile-index/promo-photo-cat@2x.jpg 2x" width="320" height="302" alt="Фотография радостного кота">
         </picture>
         <picture>
           <source width="552" height="499" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop-index/promo-photo-desktop@1x.jpg 1x, images/desktop-index/promo-photo-desktop@2x.jpg 2x">
-          <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet_index/promo-photo-tablet@1x.jpg 1x, images/tablet_index/promo-photo-tablet@2x.jpg 2x">
+          <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet-index/promo-photo-tablet@1x.jpg 1x, images/tablet-index/promo-photo-tablet@2x.jpg 2x">
           <img class="promo__photo" src="images/mobile-index/promo-photo@1x.jpg" srcset="images/mobile-index/promo-photo@2x.jpg 2x" width="280" height="270" alt="Фотография промо продукции">
         </picture>
         <a class="promo__button button" href="#">Подобрать программу</a>
-        <article class="promo__promo-preview promo-preview-slim">
-          <h2 class="promo-preview-slim__excerpt-title">Похудение</h2>
-          <p class="promo-preview-slim__excerpt-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="promo-preview-slim__more" href="#">Каталог Slim</a>
+        <article class="promo__promo-preview promo-preview">
+          <h2 class="promo-preview__excerpt-title">Похудение</h2>
+          <p class="promo-preview__excerpt-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="promo-preview__more" href="#">Каталог Slim</a>
         </article>
-        <article class="promo__promo-preview promo-preview-strong">
-          <h2 class="promo-preview-strong__excerpt-title">Набор массы</h2>
-          <p class="promo-preview-strong__excerpt-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="promo-preview-strong__more" href="#">Каталог Pro</a>
+        <article class="promo__promo-preview promo-preview">
+          <h2 class="promo-preview__excerpt-title">Набор массы</h2>
+          <p class="promo-preview__excerpt-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="promo-preview__more" href="#">Каталог Pro</a>
         </article>
       </div>
     </section>
@@ -84,25 +80,33 @@
         <h2 class="benefits__title">Как это работает</h2>
         <ul class="benefits__list reset-list">
           <li class="benefits__item">
-            <img class="benefits__item benefits-photo" src="images/benefits-leaf-icon.svg" width="30" height="32" alt="Знак полезных веществ">
+            <div class="benefits__item-container">
+              <img class="benefits__item benefits-photo" src="images/benefits-leaf-icon.svg" width="30" height="32" alt="Знак полезных веществ">
+            </div>
             <p class="benefits__item benefits-description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
           <li class="benefits__item">
-            <img class="benefits__item benefits-photo" src="images/benefits-aqua.svg" width="26" height="29" alt="Знак формы выпуска продукта">
+            <div class="benefits__item-container">
+              <img class="benefits__item benefits-photo" src="images/benefits-aqua.svg" width="26" height="29" alt="Знак формы выпуска продукта">
+            </div>
             <p class="benefits__item benefits-description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
           <li class="benefits__item">
-            <img class="benefits__item benefits-photo" src="images/benefits-cutlery.svg" width="25" height="30" alt="Знак готовности продукта в употреблению">
+            <div class="benefits__item-container">
+              <img class="benefits__item benefits-photo" src="images/benefits-cutlery.svg" width="25" height="30" alt="Знак готовности продукта в употреблению">
+            </div>
             <p class="benefits__item benefits-description">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
           <li class="benefits__item">
-            <img class="benefits__item benefits-photo" src="images/benefits-time.svg" width="26" height="31" alt="Знак времени доставки продукта">
+            <div class="benefits__item-container">
+              <img class="benefits__item benefits-photo" src="images/benefits-time.svg" width="26" height="31" alt="Знак времени доставки продукта">
+            </div>
             <p class="benefits__item benefits-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>

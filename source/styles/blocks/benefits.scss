@@ -2,9 +2,56 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .benefits__list {
   list-style: none;
   color: var(--main-grey);
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 20px;
 }
+
+.benefits__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits__item-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-green);
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    flex-flow: row wrap;
+    width: 630px;
+    justify-content: space-between;
+    row-gap: 37px;
+  }
+
+  .benefits__item {
+    flex-direction: column;
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
+

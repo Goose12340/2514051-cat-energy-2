@@ -2,16 +2,48 @@ $link-color: rgba(0, 0, 0, 1);
 
 
 .site-list {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-minor);
   font-size: 20px;
   line-height: 20px;
   list-style: none;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+}
+
+.site-list__item {
+  padding: 22px 0 24px;
+  border-top: 1px solid rgba(230, 230, 230, 1);
 }
 
 .site-list__link {
   text-decoration: none;
   text-transform: uppercase;
   color: $link-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  .site-list__item {
+    border-top: none;
+    padding: 12px 0;
+
+    &.site-list__item--active {
+      border-bottom: 2px solid var(--main-green);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 475px;
+  }
 }

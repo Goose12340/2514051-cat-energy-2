@@ -4,4 +4,12 @@
   --font-minor: "Oswald", sans-serif;
   --main-green: rgba(104, 183, 56, 1);
   --main-grey: rgba(68, 68, 68, 1);
+  --minor-grey: rgba(234, 234, 234, 1);
+  --main-white: rgba(255, 255, 255, 1);
+  --main-dark: rgba(0, 0, 0, 1);
 }
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
