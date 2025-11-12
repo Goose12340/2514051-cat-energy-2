@@ -20,17 +20,6 @@ body {
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    padding: 25px 30px 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    padding: 55px 110px 66px;
-  }
-}
 
 .visually-hidden {
   position: absolute;
@@ -47,4 +36,17 @@ body {
 
 .reset-list {
   list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  body {
+    padding: 25px 30px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    padding: 55px 110px 66px;
+  }
 }
