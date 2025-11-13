@@ -9,7 +9,7 @@
 .main-header__toggle {
   all: unset;
   width: 24px;
-  min-height: 24px;
+  height: 24px;
   font-size: 0;
 
 
@@ -19,8 +19,7 @@
   background-position: 100% 0;
 
 
-  &::after {
-    content: "";
+  &.main-header__toggle.toggle--active {
     background-image: url("../../icons/stack.svg#menu_cross");
     background-size: 16px 16px;
     background-repeat: no-repeat;

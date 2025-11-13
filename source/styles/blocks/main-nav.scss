@@ -3,11 +3,16 @@
   text-align: center;
   justify-content: center;
   position: absolute;
-  top: 130%;
+  top: 110%;
   left: -20px;
 
   &.main-nav--close {
     display: none;
+  }
+
+  &.main-nav--open {
+    display: block;
+    z-index: 2;
   }
 }
 

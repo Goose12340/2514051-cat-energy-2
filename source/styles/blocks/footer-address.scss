@@ -1,3 +1,9 @@
+.footer-address {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 26px;
+}
+
 .footer-address__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -5,12 +11,17 @@
   line-height: 20px;
   text-transform: uppercase;
   color: rgba(17, 17, 17, 1);
+  margin: 0;
+  width: 140px;
 }
 
 .footer-address__link {
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: var(--main-grey);
+  width: 140px;
 }
+
