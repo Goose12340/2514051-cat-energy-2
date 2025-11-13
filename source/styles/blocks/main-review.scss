@@ -1,5 +1,7 @@
 .main-review {
   background-color: var(--minor-grey);
+  padding: 0 20px;
+  padding-top: 25px;
 }
 
 .main-review__title {
@@ -7,10 +9,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .main-review__description {
   color: var(--main-grey);
+  margin: 0;
   margin-bottom: 20px;
 }
 

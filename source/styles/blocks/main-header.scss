@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 0 20px;
 }
 
 .main-header__toggle {
@@ -21,7 +22,7 @@
 
   &.main-header__toggle.toggle--active {
     background-image: url("../../icons/stack.svg#menu_cross");
-    background-size: 16px 16px;
+    background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: 100% 0;
   }
@@ -32,6 +33,8 @@
     display: flex;
     margin: 0 auto;
     align-items: center;
+    padding: 0 34px 0 30px;
+    margin-bottom: 65px;
   }
 
   .main-header__logo {

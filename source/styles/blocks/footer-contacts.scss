@@ -28,3 +28,24 @@
   padding: 20px 0;
   width: 280px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+  }
+
+  .footer-contacts__social-list.reset-list {
+    padding: 0;
+  }
+
+  .footer-contacts__logo-name {
+    padding: 0;
+  }
+
+  .footer-contacts__html-academy {
+    width: 168px;
+  }
+}

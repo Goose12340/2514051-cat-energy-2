@@ -1,7 +1,8 @@
 .footer-address {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 26px;
+  padding: 26px 20px 0;
+  row-gap: 26px;
 }
 
 .footer-address__title {
