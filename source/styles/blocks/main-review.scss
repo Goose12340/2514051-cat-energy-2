@@ -27,3 +27,19 @@
   color: rgba(0, 0, 0, 1);
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-review {
+    background-color: var(--main-white);
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  .main-review__title {
+    margin-bottom: 60px;
+  }
+
+  .main-review__description {
+    margin-bottom: 55px;
+  }
+}

@@ -62,10 +62,13 @@
 @media (min-width: $tablet-width) {
   .promo-preview {
     min-width: 708px;
+    margin: 30px;
+    margin-top: 0;
     padding: 77px 53px 53px;
     background-size: 200px 211px;
     background-repeat: no-repeat;
     background-position: 90% 60%;
+
 
     &:nth-of-type(even) {
       background-size: 268px 200px;
